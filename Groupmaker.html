@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/> 
+	<script src="Groupmaker.js"></script>
+	<link rel="stylesheet" type="text/css" href="Groupmaker.css"/>
+</head>
+<body>
+<header>
+<h1>Random Group Maker</h1>
+</header>
+<section>
+<div class="studentlist">
+	<textarea id="studentNames" name="Student names" rows="18" cols="30" placeholder="Type Names here..." required="required"></textarea>
+	<br/>
+	<p>Number of groups :</p>
+	<input id="numberOfGroups" type="number" name="quantity" value="4" required>
+	<br/>
+	<button class="button" onclick="groupMaker()">Make groups</button>
+</div>
+<div id="list"></div>
+</section>
+<footer>
+Copyright © SDF programs
+</footer>
+</body>
+</html>

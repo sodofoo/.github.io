@@ -1,0 +1,53 @@
+<!--
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ *                                                                   *
+ *                 Random Letter Game Version 1.0                       *
+ *                                                                   * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *                                                                   *
+ *           Made by Stephen Frampton        31/03/2016              *
+ *                                                                   *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head
+    <meta charset="UTF-8"/> 
+	<script src="CountdownTimer.js"></script>
+	<link rel="stylesheet" type="text/css" href="Groupmaker.css"/>
+</head>
+
+<script type="text/javascript">
+
+function generateRandomLetter() {
+
+initializeClock('clockdiv', 6000);
+document.getElementById('randomLetter').innerHTML='';
+// uncomment for capitals and lowercase letters
+//if (Math.random() < .5) {
+
+document.getElementById('randomLetter').innerHTML=(String.fromCharCode(97 + Math.round(Math.random() * 25)));
+
+//}
+
+//else {
+
+//document.getElementById('randomLetter').innerHTML=(String.fromCharCode(65 + Math.round(Math.random() * 25)));
+
+//}
+}
+</script>
+
+<div>
+	<h1>Random Letter Generator</h1>
+
+<p id="randomLetter"></p>
+<br/>
+<button class="button" onclick="generateRandomLetter();">Press for a random letter</button>
+</div>
+<div id="clockdiv"></div>
+<footer>
+Copyright © SDF programs
+</footer>
+</html>
